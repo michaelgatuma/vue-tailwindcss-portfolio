@@ -22,7 +22,7 @@ const user = {
   introduction:
     'I am a highly skilled and experienced full stack developer with a strong background in both frontend and backend technologies.',
   slogan:
-    '#Laravel #VueJS #TailwindCSS #AlpineJS #InertiaJS #Livewire #Redis #MySQL #PostgreSQL #AWS #DigitalOcean #Linux #Git #Docker #Nginx #Apache #PHP #JavaScript #TypeScript #HTML #CSS'
+    '#Laravel #VueJS #TailwindCSS #AlpineJS #InertiaJS #Livewire #Redis #Websockets #MySQL #PostgreSQL #AWS #DigitalOcean #Linux #Git #Docker #Nginx #Apache #PHP #JavaScript #TypeScript #HTML #CSS'
 }
 
 const news = [
@@ -186,10 +186,21 @@ const stats = [
       <!-- Notice -->
       <GPanel to="#" span="4" custom>
         <div class="text-sm">
-          I created this portfolio using <a href="#" class="text-[#41B883]">Vue3</a> and
-          <a href="#" class="text-[#07adca]">TailwindCSS</a> for my own needs.<br />
-          You are free to fork and use it as you may wish.<br />
-          Most features are yet to be implemented, so any contributions will be nice.
+          <p>
+            I created this portfolio using <a href="#" class="text-[#41B883]">Vue3</a> and
+            <a href="#" class="text-[#07adca]">TailwindCSS</a> for my own needs.<br />
+            You are free to fork and use it as you may wish.<br />
+            Most features are yet to be implemented, so any contributions will be nice.
+          </p>
+          <div class="mt-6">
+            <a
+              target="_blank"
+              href="https://github.com/michaelgatuma/vue-tailwindcss-portfolio"
+              class="border border-gray-600 bg-gray-700 text-white px-6 py-3 rounded-xl hover:bg-white hover:text-gray-700 transition-all shadow-sm shadow-black"
+            >
+              View in Github
+            </a>
+          </div>
         </div>
       </GPanel>
     </div>
