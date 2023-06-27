@@ -162,9 +162,6 @@ const stats = [
                 :duration="5"
                 easing="Power4.easeOut"
               />
-              <span v-if="stat.suffix">
-                {{ stat.suffix }}
-              </span>
             </div>
             <div class="uppercase text-sm text-center">
               {{ stat.title }}
