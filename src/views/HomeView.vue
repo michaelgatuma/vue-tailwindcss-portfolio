@@ -21,28 +21,29 @@ const user = {
   occupation: 'Full-stack Developer',
   introduction:
     'I am a highly skilled and experienced full stack developer with a strong background in both frontend and backend technologies.',
-  slogan: '#Laravel #VueJS #TailwindCSS #AlpineJS #InertiaJS #Livewire #Redis #MySQL #PostgreSQL #AWS #DigitalOcean #Linux #Git #Docker #Nginx #Apache #PHP #JavaScript #TypeScript #HTML #CSS',
+  slogan:
+    '#Laravel #VueJS #TailwindCSS #AlpineJS #InertiaJS #Livewire #Redis #MySQL #PostgreSQL #AWS #DigitalOcean #Linux #Git #Docker #Nginx #Apache #PHP #JavaScript #TypeScript #HTML #CSS'
 }
 
 const news = [
-  '<span>Latest work and <b>Featured</b></span>',
-  '<a href=`#`>Latest work and <b>Featured</b></a>',
-  '<span>Latest work and <b>Featured</b></span>'
+  '<span>Latest work and <strong>Featured</strong></span>',
+  '<a href=`#`>Latest work and <strong>Featured</strong></a>',
+  '<span>Latest work and <strong>Featured</strong></span>'
 ]
 
 const stats = [
   {
     number: 5,
     title: 'Years Experience',
-    prefix: '+',
+    prefix: '+'
   },
   {
     number: 125,
-    title: 'Clients Countrywide',
+    title: 'Clients Countrywide'
   },
   {
     number: 210,
-    title: 'Total Projects',
+    title: 'Total Projects'
   }
 ]
 </script>
@@ -50,7 +51,7 @@ const stats = [
 <template>
   <main>
     <!-- Grid Pane -->
-    <div class="grid grid-cols-4 gap-6">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
       <!-- User Info -->
       <GPanel to="#" span="2" :custom="true">
         <div class="bg-gray-200 rounded-tl-xl rounded-br-xl w-50 h-full">
@@ -83,12 +84,7 @@ const stats = [
             <marquee behavior="" direction="">
               <div class="flex gap-2">
                 <div v-for="(headline, i) in news" :key="i" class="flex">
-                  <img
-                    class="mx-2"
-                    decoding="async"
-                    :src="Star"
-                    alt="Star"
-                  />
+                  <img class="mx-2" decoding="async" :src="Star" alt="*" />
                   <span v-html="headline"></span>
                 </div>
               </div>
@@ -96,7 +92,7 @@ const stats = [
           </div>
         </div>
 
-        <div class="mgrid-2 h-full">
+        <div class="grid grid-cols-4 sm:grid-cols-2 gap-6 w-full h-full">
           <!-- About -->
           <GPanel to="#" title="Credentials" subtitle="More About Me">
             <div>
@@ -148,7 +144,7 @@ const stats = [
 
       <!-- Stats -->
       <GPanel span="2">
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div
             v-for="(stat, i) in stats"
             :key="i"
@@ -181,10 +177,10 @@ const stats = [
       <GPanel to="#" custom span="2" sparkle class="items-end">
         <div>
           <div class="text-5xl text-white">
-          Let's<br />
-          work <span class="text-blue-600">together</span>.
-        </div>
-        <div class="text-xs text-zinc-500 mt-2">
+            Let's<br />
+            work <span class="text-blue-600">together</span>.
+          </div>
+          <div class="text-xs text-zinc-500 mt-2">
             {{ user.slogan }}
           </div>
         </div>

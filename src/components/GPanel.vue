@@ -27,9 +27,9 @@ const props = defineProps({
 
 <template>
   <div
-    class="relative group border border-gray-700 bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 flex gap-6"
+    class="relative col-span-2 group border border-gray-700 bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 flex gap-6"
     :class="[
-      'col-span-' + props.span,
+      'sm:col-span-' + props.span,
       {
         'hover:cursor-pointer': props.to,
         'flex-col justify-end': !props.custom
@@ -47,20 +47,14 @@ const props = defineProps({
     <!-- sparkle -->
     <div v-if="props.sparkle" class="absolute top-0 left-6 opacity-30">
       <a href="#">
-        <img
-          :src="SparkleIcon"
-          alt=""
-        />
+        <img :src="SparkleIcon" alt="" />
       </a>
     </div>
 
     <!-- Link Icon -->
     <div v-if="props.to" class="absolute bottom-6 right-6 opacity-30 group-hover:opacity-100">
       <a href="#">
-        <img
-          :src="LinkIcon"
-          alt=""
-        />
+        <img :src="LinkIcon" alt="" />
       </a>
     </div>
   </div>

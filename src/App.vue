@@ -4,15 +4,15 @@ import Logo from '@/assets/images/gatuma-logo.png'
 </script>
 
 <template>
-  <div class="max-w-6xl mx-auto text-gray-500 py-5 transition-all">
+  <div class="sm:max-w-6xl sm:mx-auto text-gray-500 py-5 transition-all">
     <!-- Header -->
-    <div id="header" class="flex w-full justify-between">
+    <div id="header" class="flex w-full justify-between px-2 sm:p-0">
       <!-- Logo -->
       <div id="logo">
         <img class="h-10" :src="Logo" alt="" />
       </div>
       <!-- Nav -->
-      <div id="nav-menu" class="flex gap-10">
+      <div id="nav-menu" class="hidden sm:flex gap-10">
         <div class="text-white">
           <RouterLink to="/">Home</RouterLink>
         </div>
@@ -37,7 +37,7 @@ import Logo from '@/assets/images/gatuma-logo.png'
       </div>
     </div>
     <!-- Router view -->
-    <div class="my-20">
+    <div class="my-10 sm:my-20 px-4 xl:p-0">
       <RouterView />
     </div>
     <!-- Footer -->

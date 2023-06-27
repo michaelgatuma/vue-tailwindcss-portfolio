@@ -1,6 +1,9 @@
-# gatuma-portfolio
+# Vue Tailwindcss Portfolio Template
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a grid style dark themed portfolio especially designed with devs in mind. It is based on Vue3 and TailwindCSS. Feel free to contribute and fork. 
+
+<a href=#><img src="src/assets/images/screenshot.png"></a>
+
 
 ## Recommended IDE Setup
 
