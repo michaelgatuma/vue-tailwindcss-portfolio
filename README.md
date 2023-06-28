@@ -1,6 +1,8 @@
 # Vue Tailwindcss Portfolio Template
 
-This is a grid style dark themed portfolio especially designed with devs in mind. It is based on Vue3 and TailwindCSS. Feel free to contribute and fork. 
+This is a grid style dark themed portfolio especially designed with devs in mind. It is based on Vue3 and TailwindCSS. Feel free to contribute and fork.
+
+View demo here: [https://gatuma.me/](https://gatuma.me)
 
 > Inspired by [Gridx wordpress theme](https://wpriverthemes.com/gridx)
 
